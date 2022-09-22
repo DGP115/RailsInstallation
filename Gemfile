@@ -47,11 +47,23 @@ group :development do
 end
 
 group :test do
+<<<<<<< Updated upstream
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
+=======
+  # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
+  gem "capybara"
+  gem "selenium-webdriver"
+  gem "webdrivers"
+
+
+group :production do
+  gem 'pg', '~> 1.0'
+  gem 'rails_12factor'
+>>>>>>> Stashed changes
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
